@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DGaming</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+body { margin: 0; font-family: Arial, sans-serif; background-color: #121212; color: #fff; }
+header { background: #ff6600; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { margin: 0; }
+nav { display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; transition: 0.3s; }
+nav a:hover { opacity: 0.7; }
+.container { display: flex; }
+.sidebar { width: 220px; background: #1e1e1e; padding: 20px; }
+.sidebar a { display: block; margin: 15px 0; color: #fff; text-decoration: none; transition: 0.3s; }
+.sidebar a:hover { color: #ff6600; }
+.content { flex: 1; padding: 20px; }
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background: url('https://images.unsplash.com/photo-1542751371-adc38448a05e') center/cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.banner h2 { background: rgba(0,0,0,0.6); padding: 10px; border-radius: 5px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: #1e1e1e; border-radius: 10px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform: scale(1.05); box-shadow: 0 0 15px #ff6600; }
+.card img { width: 100%; height: 160px; object-fit: cover; }
+.card-content { padding: 10px; }
+.button { display: inline-block; margin-top: 10px; padding: 8px 12px; background: #ff6600; border-radius: 5px; text-decoration: none; color: white; transition: 0.3s; }
+.button:hover { background: #ff8533; }
+.section-title { margin-top: 30px; }
+</style>
+</head>
+<body>
+<header>
+    <h1><i class="fa-solid fa-gamepad"></i> DGaming</h1>
+    <nav>
+        <a href="#">Novas Notícias</a>
+        <a href="#">Reviews</a>
+        <a href="#">Lançamentos</a>
+        <a href="#">Trending</a>
+    </nav>
+</header>
+<div class="container">
+    <div class="sidebar">
+        <a href="#"><i class="fa-solid fa-user"></i> Perfil</a>
+        <a href="#"><i class="fa-solid fa-tags"></i> Descontos</a>
+        <a href="#"><i class="fa-brands fa-xbox"></i> Xbox</a>
+        <a href="#"><i class="fa-brands fa-playstation"></i> PlayStation</a>
+    </div>
+    <div class="content">
+
+        <div class="banner">
+            <h2>🔥 Destaque: Halo Infinite dominando o multiplayer!</h2>
+        </div>
+
+        <h2>Destaques</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
+                <div class="card-content">
+                    <h3>Cyberpunk 2077</h3>
+                    <p>A Night City nunca esteve tão viva: combates intensos e liberdade total em um mundo futurista caótico.</p>
+                    <a class="button" href="#">Ver mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War">
+                <div class="card-content">
+                    <h3>God of War</h3>
+                    <p>Kratos enfrenta deuses nórdicos em batalhas brutais com uma história emocionante.</p>
+                    <a class="button" href="#">Ver mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1240440/header.jpg" alt="Halo Infinite">
+                <div class="card-content">
+                    <h3>Halo Infinite</h3>
+                    <p>O retorno épico do Master Chief com multiplayer viciante e ação intensa.</p>
+                    <a class="button" href="#">Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Mais Jogos</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" alt="Elden Ring">
+                <div class="card-content">
+                    <h3>Elden Ring</h3>
+                    <p>Um mundo aberto brutal e desafiador onde cada vitória é conquistada com esforço.</p>
+                    <a class="button" href="#">Ver mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1817070/header.jpg" alt="Spider-Man">
+                <div class="card-content">
+                    <h3>Spider-Man</h3>
+                    <p>Balance pelos prédios de NY com fluidez absurda e combates cinematográficos.</p>
+                    <a class="button" href="#">Ver mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/header.jpg" alt="Forza Horizon 5">
+                <div class="card-content">
+                    <h3>Forza Horizon 5</h3>
+                    <p>Corridas em alta velocidade com gráficos incríveis e liberdade total nas pistas.</p>
+                    <a class="button" href="#">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
